@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  /* avior color system */
+  --color-space: #070a14;
+  --color-surface: #0e1322;
+  --color-surface-2: #141a2c;
+  --color-primary: #3b5bff;
+  --color-primary-hover: #4f6bff;
+  --color-success: #22c55e;
+  --color-ink: #eef1fa;
+  --color-muted: #8b93a7;
+
+  /* signature gradient stops (pink -> orange -> lavender) */
+  --color-brand-pink: #ff3d8b;
+  --color-brand-orange: #ff9356;
+  --color-brand-lavender: #b98cff;
+
+  /* fonts (wired up in layout.tsx via next/font) */
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-inter);
+}
