@@ -29,6 +29,9 @@ describe("getStatus", () => {
   it("reports in_progress otherwise", () => {
     expect(getStatus(board("X........")).state).toBe("in_progress")
   })
+  it("detects a win completed on the last move", () => {
+    expect(getStatus(board("XOOOXOOXX")).state).toBe("won")
+  })
 })
 
 describe("getActivePlayer", () => {

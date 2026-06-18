@@ -25,14 +25,14 @@ export function getStatus(board: Board): GameStatus {
         winningLine: line,
       }
     }
+  }
 
-    // if no winner and board is full, it's a draw
-    if (isBoardFull(board)) {
-      return {
-        state: "draw",
-        winner: null,
-        winningLine: null,
-      }
+  // if no winner and board is full, it's a draw
+  if (isBoardFull(board)) {
+    return {
+      state: "draw",
+      winner: null,
+      winningLine: null,
     }
   }
 
